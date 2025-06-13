@@ -1,11 +1,4 @@
-{
-  "name": "cnapp-dashboard",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "ng serve",
-    "build": "ng build"
-  },
-  "dependencies": {
+"dependencies": {
   "@angular/animations": "^20.0.0",
   "@angular/cdk": "^20.0.3",
   "@angular/common": "^20.0.0",
@@ -16,15 +9,14 @@
   "@angular/platform-browser-dynamic": "^20.0.0",
   "@angular/router": "^20.0.0",
   "ng2-charts": "^5.0.4",
-    "chart.js": "^4.4.0",
-    "rxjs": "^7.8.0",
-    "tslib": "^2.6.0",
-    "zone.js": "^0.14.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.0",
-    "@angular/cli": "^17.0.0",
-    "@angular/compiler-cli": "^17.0.0",
-    "typescript": "~5.3.0"
-  }
+  "chart.js": "^4.4.0",
+  "rxjs": "^7.8.0",
+  "tslib": "^2.6.0",
+  "zone.js": "^0.14.2"
+},
+"devDependencies": {
+  "@angular-devkit/build-angular": "^20.0.0",
+  "@angular/cli": "^20.0.0",
+  "@angular/compiler-cli": "^20.0.0",
+  "typescript": "~5.4.0"
 }
