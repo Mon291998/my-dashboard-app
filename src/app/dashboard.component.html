@@ -1,0 +1,40 @@
+<div class="p-4 space-y-10">
+  <div *ngFor="let section of dashboardData">
+    <h2 class="text-xl font-bold mb-4">{{ section.title }}</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div *ngFor="let widget of section.widgets; let i = index" class="relative bg-white rounded-xl shadow-md p-4 min-h-[200px]">
+        <button (click)="deleteWidget(section, i)" class="absolute top-2 right-2 text-gray-400 hover:text-red-500 text-lg">✖</button>
+        <h3 class="text-md font-semibold mb-2">{{ widget.title }}</h3>
+
+        <div *ngIf="widget.data; else noData">
+          <canvas baseChart [data]="widget.data" [type]="widget.type === 'donut' ? 'doughnut' : 'bar'" [options]="{ responsive: true, maintainAspectRatio: false }" height="180"></canvas>
+        </div>
+        <ng-template #noData>
+          <div class="text-gray-400 text-sm text-center mt-10">No Graph data available</div>
+        </ng-template>
+      </div>
+
+      <div class="add-widget" (click)="openAddWidgetForm(section)">+ Add Widget</div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Widget Modal -->
+<div *ngIf="showForm" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-lg w-full max-w-md shadow-lg">
+    <h3 class="text-lg font-bold mb-4">Add Widget</h3>
+
+    <label class="block mb-2">Title:</label>
+    <input [(ngModel)]="newWidget.title" class="w-full p-2 border rounded mb-4" />
+
+    <label class="block mb-2">Type:</label>
+    <select [(ngModel)]="newWidget.type" class="w-full p-2 border rounded mb-4">
+      <option value="donut">Donut</option>
+      <option value="bar">Bar</option>
+    </select>
+
+    <button (click)="addWidget()" class="bg-blue-500 text-white px-4 py-2 rounded mr-2">Add</button>
+    <button (click)="closeForm()" class="bg-gray-300 px-4 py-2 rounded">Cancel</button>
+  </div>
+</div>
