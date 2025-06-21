@@ -1,0 +1,50 @@
+<div class="p-6">
+  <!-- Top Header -->
+  <div class="flex items-center justify-between mb-6">
+    <!-- Breadcrumb -->
+    <div class="text-sm text-gray-500">
+      <span class="text-gray-400">Home</span>
+      <span class="mx-1">></span>
+      <span class="font-medium text-gray-700">Dashboard V2</span>
+    </div>
+
+    <!-- Search -->
+    <div>
+      <input
+        type="text"
+        placeholder="Search anything..."
+        class="px-4 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 w-64"
+      />
+    </div>
+  </div>
+
+  <!-- Section: CSPM Executive Dashboard -->
+  <h2 class="text-lg font-semibold text-gray-800 mb-4">
+    CSPM Executive Dashboard
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    <app-cloud-accounts-card></app-cloud-accounts-card>
+    <app-cloud-account-risk-card></app-cloud-account-risk-card>
+  </div>
+
+  <!-- Section: CWPP Dashboard -->
+  <h2 class="text-lg font-semibold text-gray-800 mb-4">CWPP Dashboard</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    <app-cwpp-dashboard-card></app-cwpp-dashboard-card>
+    <app-workload-alerts-card></app-workload-alerts-card>
+  </div>
+
+  <!-- Section: Registry Scan -->
+  <h2 class="text-lg font-semibold text-gray-800 mb-4">Registry Scan</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <app-registry-scan-card></app-registry-scan-card>
+    <app-risk-assessment-card></app-risk-assessment-card>
+    <app-image-security-card></app-image-security-card>
+    <div class="dashboard-grid">
+      <app-cloud-account-widget></app-cloud-account-widget>
+    </div>
+  </div>
+</div>
