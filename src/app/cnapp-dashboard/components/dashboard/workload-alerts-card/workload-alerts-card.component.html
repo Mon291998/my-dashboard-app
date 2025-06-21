@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-title">Workload Alerts</div>
+
+  <div class="alert-count">{{ totalAlerts }}</div>
+
+  <div class="alert-details">
+    <div class="alert-item">
+      <span>Critical</span>
+      <span>{{ alerts.critical }}</span>
+    </div>
+    <div class="alert-item">
+      <span>High</span>
+      <span>{{ alerts.high }}</span>
+    </div>
+    <div class="alert-item">
+      <span>Medium</span>
+      <span>{{ alerts.medium }}</span>
+    </div>
+    <div class="alert-item">
+      <span>Low</span>
+      <span>{{ alerts.low }}</span>
+    </div>
+  </div>
+
+  <button (click)="viewAlerts()">View Alerts</button>
+</div>

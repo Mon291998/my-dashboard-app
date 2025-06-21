@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-title">CWPP Dashboard</div>
+
+  <div class="card-content">
+    <div><strong>Total Workloads:</strong> {{ totalWorkloads }}</div>
+    <div><strong>Protected Workloads:</strong> {{ protectedWorkloads }}</div>
+    <div>
+      <strong>Unprotected Workloads:</strong> {{ unprotectedWorkloads }}
+    </div>
+    <div><strong>Last Scan:</strong> {{ lastScanTime | date : "short" }}</div>
+
+    <div class="status" [ngClass]="getProtectionStatusClass()">
+      {{ protectionStatus }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="vuln-card">
+  <div class="vuln-header">
+    <h3>Vulnerabilities</h3>
+    <span class="badge total">{{ totalCount }} total</span>
+  </div>
+  <ul class="vuln-list">
+    <li *ngFor="let vuln of vulnerabilities">
+      <span class="severity {{ vuln.severity.toLowerCase() }}">
+        {{ vuln.severity }}
+      </span>
+      <span class="count">{{ vuln.count }}</span>
+    </li>
+  </ul>
+</div>

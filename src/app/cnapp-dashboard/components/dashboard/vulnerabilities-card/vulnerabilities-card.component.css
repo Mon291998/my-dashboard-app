@@ -1,0 +1,65 @@
+.vuln-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.vuln-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.vuln-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.badge.total {
+  background-color: #e0e7ff;
+  color: #1e40af;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.vuln-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vuln-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.severity {
+  font-weight: 500;
+}
+
+.severity.critical {
+  color: #dc2626;
+}
+
+.severity.high {
+  color: #ea580c;
+}
+
+.severity.medium {
+  color: #eab308;
+}
+
+.severity.low {
+  color: #10b981;
+}
+
+.count {
+  font-weight: bold;
+}

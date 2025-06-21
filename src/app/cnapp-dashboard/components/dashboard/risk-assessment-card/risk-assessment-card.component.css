@@ -1,0 +1,57 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.risk-score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.risk-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.risk-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}

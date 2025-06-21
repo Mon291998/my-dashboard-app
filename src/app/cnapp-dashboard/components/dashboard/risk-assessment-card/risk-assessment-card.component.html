@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-title">Risk Assessment</div>
+
+  <div class="risk-score">{{ riskScore }}%</div>
+
+  <div class="risk-details">
+    <div class="risk-item">
+      <span>Critical Risks</span>
+      <span>{{ risks.critical }}</span>
+    </div>
+    <div class="risk-item">
+      <span>High Risks</span>
+      <span>{{ risks.high }}</span>
+    </div>
+    <div class="risk-item">
+      <span>Medium Risks</span>
+      <span>{{ risks.medium }}</span>
+    </div>
+    <div class="risk-item">
+      <span>Low Risks</span>
+      <span>{{ risks.low }}</span>
+    </div>
+  </div>
+
+  <button (click)="viewDetails()">View Details</button>
+</div>

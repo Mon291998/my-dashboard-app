@@ -1,0 +1,65 @@
+.alerts-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.alerts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.alerts-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.badge.total {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alerts-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 14px;
+}
+
+.severity {
+  font-weight: 500;
+}
+
+.severity.critical {
+  color: #dc2626;
+}
+
+.severity.high {
+  color: #f97316;
+}
+
+.severity.medium {
+  color: #eab308;
+}
+
+.severity.low {
+  color: #10b981;
+}
+
+.count {
+  font-weight: bold;
+}

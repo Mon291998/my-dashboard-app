@@ -1,0 +1,22 @@
+<!-- Top bar with breadcrumb and search -->
+<div class="top-bar">
+  <div class="breadcrumb">Home &gt; Dashboard v2</div>
+  <div class="search-wrapper">
+    <span class="search-icon">🔍</span>
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search anything..."
+      class="search-input"
+    />
+  </div>
+  <h2 class="title">CNAPP Executive Dashboard</h2>
+  <div class="dashboard-grid">
+    <app-cloud-accounts-card></app-cloud-accounts-card>
+    <app-image-security-card></app-image-security-card>
+    <app-vulnerabilities-card></app-vulnerabilities-card>
+    <app-alerts-card></app-alerts-card>
+    <app-workload-alerts-card></app-workload-alerts-card>
+    <app-risk-assessment-card></app-risk-assessment-card>
+  </div>
+</div>

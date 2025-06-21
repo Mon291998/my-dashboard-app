@@ -1,0 +1,88 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease-in-out;
+  margin-bottom: 16px;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #444;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 4px;
+  color: #111;
+}
+
+.vulnerability-level {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.vulnerability-level.low {
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+.vulnerability-level.medium {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.vulnerability-level.high {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.footer-button {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.footer-button button {
+  background-color: #1e88e5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.footer-button button:hover {
+  background-color: #1565c0;
+}

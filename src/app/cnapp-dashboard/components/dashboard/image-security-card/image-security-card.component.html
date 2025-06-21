@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-content">
+
+    <div class="stat">
+      <div class="stat-label">Critical Vulnerabilities</div>
+      <div class="stat-value">{{ criticalCount }}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-label">Last Scan Time</div>
+      <div class="stat-value">{{ lastScanTime | date : 'short' }}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-label">Security Status</div>
+      <div class="vulnerability-level" [ngClass]="getVulnerabilityLevelClass()">
+        {{ vulnerabilityLevel }}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-button">
+    <button (click)="viewReport()">View Full Report</button>
+  </div>
+</div>

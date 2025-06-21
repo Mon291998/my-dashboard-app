@@ -1,0 +1,14 @@
+<div class="alerts-card">
+  <div class="alerts-header">
+    <h3>Alerts</h3>
+    <span class="badge total">{{ totalCount }} total</span>
+  </div>
+  <ul class="alerts-list">
+    <li *ngFor="let alert of alerts">
+      <span class="severity {{ alert.severity.toLowerCase() }}">
+        {{ alert.severity }}
+      </span>
+      <span class="count">{{ alert.count }}</span>
+    </li>
+  </ul>
+</div>
